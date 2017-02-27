@@ -1,0 +1,7 @@
+/node/node_modules/
+/node/logs.log
+.idea/*
+.idea/
+/node/npm-debug.log
+npm-debug.log
+/reactWebApp/node_modules/

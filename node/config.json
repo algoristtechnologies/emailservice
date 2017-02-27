@@ -1,0 +1,50 @@
+{
+  "mailerClient": {
+    "priority1": "SendGrid",
+    "priority2": "MailGun",
+    "priority": "SES"
+  },
+  "mongoDBCollection": {
+    "Emails": "emailsList",
+    "emailsServiceProvider": "emailsServiceProvider"
+  },
+  "mailgun": {
+    "api_key": "key-6d7e581b312f0a65c5f7f9e71d74a883",
+    "domain": "sandboxf77c8819763f467f84ae955c363db9de.mailgun.org"
+  },
+  "sendGrid": {
+    "api_user": "testmail123",
+    "api_key": "test12345"
+  },
+  "ses": {
+    "accessKeyId": "AKIAJ4WYLHZ2GRQWSVAQ",
+    "secretAccessKey": "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"
+  },
+  "emailProviders" : [
+  {
+	"provider": "SendGrid", 
+	"status" : "enabled" 
+  }, 
+  {
+	"provider" : "MailGun",
+	"status" : "enabled" },  
+  {
+	"provider" : "SES",
+	"status" : "disabled" 
+  },  
+  {
+	"provider": "Mandrill",
+	"status" : "disabled" 
+  }
+  ],
+  "appenders" : [
+  {
+		"type": "console"
+  },
+  {
+	"type": "file",
+    "filename": "logs.log",
+	"category": ["index.js","mailerService.js","app.js"]
+     }
+	]
+}
